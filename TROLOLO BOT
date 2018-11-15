@@ -1,0 +1,41 @@
+const Discord = require('discord.js');
+const robot = new Discord.Client();
+
+robot.login("NTEyNjE4MTcxODU4MDI2NTA2.Ds8E2Q.wf-YN74yEQydFvL_IOcS8XGMALQ");
+
+robot.on('message', (message) => {
+    //Сообщение на которое отвечает
+    if(message.content == "зайди"){
+        //Ответ на сообщение
+        message.reply("иди нах..");
+    }
+    if(message.content == "ник"){
+        message.reply("Шооо?");
+    }
+    if(message.content == "ник зайди"){
+        message.reply("иди нах...");
+    }
+    if(message.content == "Ник зайди"){
+        message.reply("иди нах...");
+    }
+    if(message.content == "Ник"){
+        message.reply("Шоооо??...");
+    }
+    if(message.content == "Зайди"){
+        message.reply("иди нах...");
+    }
+    if(message.content == "Никита"){
+        message.reply("Шо ти нада??...");
+    }
+    if(message.content == "никита"){
+        message.reply("Шо ти нада??...");
+    }
+    if(message.content == "Никитос"){
+        message.reply("Я его личный автоответчик, что хотели?");
+    }
+    if(message.content == "Кто Илья по масти?"){
+        message.reply("ПИТУХ!!");
+    }
+});
+
+client.login(process.env.BOT_TOKEN);
